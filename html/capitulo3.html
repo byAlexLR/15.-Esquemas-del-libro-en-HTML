@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 3 - Variables y Constantes</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/capitulos.css">
+</head>
+
+<body>
+    <h1>3. VARIABLES Y CONSTANTES</h1>
+    <p>Las variables son espacios de memoria que almacenan información que puede cambiar durante la ejecución del
+        programa, mientras que las constantes mantienen un valor fijo e inalterable una vez asignado.</p>
+
+    <h2>3.1 Variables</h2>
+    <p>Las variables en JavaScript se declaran con <code>let</code> o <code>var</code>, siendo <code>let</code>
+        preferido para el ámbito de bloque. Aunque <code>var</code> es compatible con versiones anteriores,
+        <code>let</code> es más seguro para evitar errores. Las variables pueden declararse y asignarse en una sola
+        línea:</p>
+    <pre><code>
+        let nombre = "Juan";
+        var edad = 30;
+    </code></pre>
+    <p>Es recomendable usar la nomenclatura <strong>camelCase</strong> para nombrar variables compuestas, como
+        <code>nombreLargoDeVariable</code>.</p>
+
+    <h2>3.2 Constantes</h2>
+    <p>Las constantes se declaran con <code>const</code> y su valor no puede cambiar después de la asignación inicial.
+        Es obligatorio asignar un valor al declarar una constante:</p>
+    <pre><code>
+        const PI = 3.1416;
+    </code></pre>
+    <p>Intentar modificar el valor de una constante como <code>PI</code> generará un error.</p>
+
+</body>
+
+</html>
