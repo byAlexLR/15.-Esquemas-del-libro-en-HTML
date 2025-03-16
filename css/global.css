@@ -1,3 +1,14 @@
+:root {
+  --text-color: #333;
+  --font-family: Arial, Helvetica, sans-serif;
+  --code-font-family: "Courier New", Courier, monospace;
+  --primario-color: #0a0a0a;
+  --secundario-color: #7fffd4;
+  --background-color: #f4f4f4;
+  --code-background: #f8f8f8;
+  --code-border: #ddd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +19,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -24,7 +35,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0a0a0a;
+  background-color: var(--primario-color);
   color: #fff;
   text-align: center;
 }
@@ -38,13 +49,16 @@ header nav {
   width: 100%;
 }
 
-header h1 {
+header h1,
+header h2 {
   margin: 10px 0;
+}
+
+header h1 {
   font-size: 1.8em;
 }
 
 header h2 {
-  margin: 10px 0;
   font-size: 1em;
 }
 
@@ -72,8 +86,8 @@ header nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #7fffd4;
-  border-color: #7fffd4;
+  color: var(--secundario-color);
+  border-color: var(--secundario-color);
 }
 
 footer {
@@ -93,6 +107,5 @@ footer p {
 }
 
 footer a:hover {
-  color: #7fffd4;
+  color: var(--secundario-color);
 }
-

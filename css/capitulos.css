@@ -1,53 +1,57 @@
 main {
-    max-width: 70%;
-    margin: 0 auto;
-    padding: 30px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 30px;
 }
 
-nav h1, nav h2 {
-    color: #fff;
-    margin: 10px 0;
-    padding: 0;
-    border-bottom: none;
+nav h1,
+nav h2,
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px 0;
+  padding: 0;
+  color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
-    color: #0a0a0a;
-    margin-bottom: 10px;
+nav h1,
+nav h2 {
+  color: #fff;
+  border-bottom: none;
 }
 
 h1 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+  border-bottom: 2px solid var(--code-border);
+  padding-bottom: 10px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 pre {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    overflow-x: auto;
+  font-family: var(--code-font-family);
+  background-color: var(--code-background);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 code {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #f8f8f8;
-    padding: 2px 4px;
-    border-radius: 4px;
+  font-family: var(--code-font-family);
+  background-color: var(--code-background);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 pre code {
-    display: flex;
-    background-color: #f4f4f4;
-    border-left: 4px solid #0a0a0a;
+  display: flex;
+  background-color: var(--background-color);
+  border-left: 4px solid var(--primary-color);
 }
 
 main ul {
-    margin-bottom: 10px;
-    margin-left: 50px;
-    list-style: circle;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  list-style: circle;
 }
