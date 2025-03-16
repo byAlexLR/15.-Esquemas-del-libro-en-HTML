@@ -1,3 +1,4 @@
+/* Definición de variables globales */
 :root {
   --text-color: #333;
   --font-family: Arial, Helvetica, sans-serif;
@@ -9,12 +10,14 @@
   --code-border: #ddd;
 }
 
+/* Reseteo de margenes y padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
   display: flex;
   flex-direction: column;
@@ -26,10 +29,12 @@ body {
   min-height: 100vh;
 }
 
+/* Estilos para los enlaces */
 a {
   text-decoration: none;
 }
 
+/* Estilos para el header y footer */
 header,
 footer {
   display: flex;
@@ -40,6 +45,7 @@ footer {
   text-align: center;
 }
 
+/* Estilos específicos para el header */
 header {
   padding: 20px;
   border-bottom: 2px solid #ddd;
@@ -49,6 +55,7 @@ header nav {
   width: 100%;
 }
 
+/* Estilos para los títulos dentro del header */
 header h1,
 header h2 {
   margin: 10px 0;
@@ -62,6 +69,7 @@ header h2 {
   font-size: 1em;
 }
 
+/* Estilos para el menú de navegación en el header */
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -71,10 +79,7 @@ header nav ul {
   padding: 10px 0;
 }
 
-nav ul li {
-  margin: 0;
-}
-
+/* Estilos para los enlaces dentro del menú de navegación */
 header nav ul li a {
   display: block;
   font-size: 1em;
@@ -85,11 +90,13 @@ header nav ul li a {
   transition: border-color 0.3s ease;
 }
 
+/* Estilo para los enlaces al pasar el cursor por encima */
 nav ul li a:hover {
   color: var(--secundario-color);
   border-color: var(--secundario-color);
 }
 
+/* Estilos para el footer */
 footer {
   font-size: 1em;
   font-weight: 500;
@@ -98,14 +105,17 @@ footer {
   padding: 15px 0;
 }
 
+/* Estilos para los enlaces en el footer */
 footer a {
   color: #fff;
 }
 
+/* Estilos para los párrafos dentro del footer */
 footer p {
   margin: 5px 0;
 }
 
+/* Estilo para los enlaces del footer al pasar el cursor por encima */
 footer a:hover {
   color: var(--secundario-color);
 }
